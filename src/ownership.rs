@@ -30,4 +30,18 @@ fn main(){
     
     // immutable field cannot be shared as a mutable reference
     // mutable field can be shared as mutable reference so that the borrower can mutate the value
+
+
+
+    let mut x = 5;
+//  println!("xp {}",*x);
+ let y = &mut x;
+ *y +=1;
+ 
+*y +=1;
+
+ println!("y {}",y);
+ 
+
+ // can have one mutable reference or n immutable reference
 }
